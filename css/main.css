@@ -202,6 +202,28 @@ body {
 	margin: 0.6em 0 1em;
 }
 
+.sponsors-tier {
+	border-bottom: 1px solid #5C6352;
+	margin: 2em 0;
+	padding-bottom: 2em;
+}
+
+.sponsors-tier img {
+	margin: 0 1.3em;
+}
+
+.tier-silver img {
+	height: 200px;
+}
+
+.tier-partner img {
+	height: 6em;
+}
+
+.sponsor-wide {
+	max-width: 400px;
+}
+
 /*== Frequently Asked Questions ==*/
 
 .faq-list {
