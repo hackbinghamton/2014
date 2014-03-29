@@ -1,0 +1,326 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+	color: #222;
+}
+
+html {
+	font-size: 1em;
+	line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+::selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+	vertical-align: middle;
+}
+
+/* ==========================================================================
+   HackBU
+   ========================================================================== */
+
+@margin-page: 0.75em;
+@max-width: 78em;
+
+*, *:before, *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.section-title {
+	font-size: 1.2em;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.button {
+	background: #000;
+	color: #FFF;
+	display: inline-block;
+	font-weight: 600;
+	padding: 0.7em 1.1em;
+	text-decoration: none;
+}
+
+.button-blue {
+	background: #5390d8;
+}
+
+.button-green {
+	background: #57a757;
+}
+
+.button-white {
+	background: #5390d8;
+}
+
+/*== Header ==*/
+
+.header {
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.75)), url(../img/springfling.jpg) no-repeat center center fixed;
+	background-size: cover;
+	box-shadow: inset 0 -1.375em 0 0 rgba(0, 0, 0, 0.4);
+	height: 100%;
+	min-height: 580px;
+	position: relative;
+
+	.button {
+		margin: 0.4em 0.2em;
+	}
+}
+
+.header-content {
+	padding: 0 0.5em;
+	position: absolute;
+	margin-top: -250px;
+	text-align: center;
+	top: 50%;
+	width: 100%;
+}
+
+.header-logo {
+	width: 220px;
+}
+
+.header-title {
+	color: #ebebeb;
+	font-size: 1.7em;
+	margin: 0;
+	text-shadow: 0.05em 0.074em 0 rgba(255, 255, 255, 0.12);
+}
+
+.header-deck {
+	color: #999;
+	font-size: 1.4em;
+	font-weight: 600;
+	margin: 0 auto 0.7em;
+	text-shadow: 0.188em 0.125em 0 rgba(255, 255, 255, 0.05);
+}
+
+/*== About ==*/
+
+.about {
+	color: #777777;
+	font-size: 1.8em;
+	padding: 1.5em @margin-page;
+	text-align: center;
+}
+
+.about-deck {
+	margin: 0 auto;
+	max-width: 15.467em;
+}
+
+.about-deck strong {
+	color: #4a4a4a;
+}
+
+/*== Sponsors ==*/
+
+.sponsors {
+	@border: 1.375em;
+	background: #4c775e;
+	border-top: @border solid rgba(0, 0, 0, 0.1);
+	box-shadow: inset 0 -@border 0 0 rgba(0, 0, 0, 0.1);
+	color: #eee;
+	margin: 1em 0 2em;
+	padding: 0 @margin-page @border;
+	text-align: center;
+}
+
+.sponsors-button {
+	margin: 3em 0;
+}
+
+.tier {
+	border-bottom: 1px solid #5C6352;
+
+	a {
+		// display: inline;
+	}
+
+	img {
+		margin: 2em 0;
+		max-height: 10em;
+		max-width: 80%;
+	}
+}
+
+.tier-title {
+	color: #8ea58e;
+	font-size: 1em;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.tier-partner {
+	img {
+		max-height: 5em;
+		margin-left: 1em;
+		margin-right: 1em;
+		max-width: 30%;
+	}
+}
+
+/*== Frequently Asked Questions ==*/
+
+.faq {
+	padding: 0 @margin-page;
+}
+
+.faq-list {
+	list-style: none;
+	padding-left: 0;
+	margin: 0 auto;
+	max-width: @max-width;
+
+	li {
+		background: #fbfbfb;
+		border: 1px solid #eee;
+		display: inline-block;
+		padding: 0 1.250em;
+		margin: 0.625em 0;
+		vertical-align: top;
+		width: 100%;
+	}
+}
+
+.faq-list-question-title {
+	display: block;
+	margin: 1em 0;
+	font-weight: 700;	
+}
+
+/*== Footer ==*/
+
+.footer {
+	border-top: 1px solid #eee;
+	font-size: 0.750em;
+	margin: 0 1em;
+	padding: 1.6em @margin-page;
+	text-align: center;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+	content: " "; /* 1 */
+	display: table; /* 2 */
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+	*zoom: 1;
+}
+
+/* ==========================================================================
+   Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width : 21.250em) {
+	.header-logo {
+		width: 320px;
+	}
+}
+
+
+@media only screen and (min-width : 36.875em) {
+	.about-deck {
+		font-size: 1.3em;
+	}
+}
+
+@media only screen and (min-width : 44.375em) {
+	.faq-list {
+		li {
+			width: ~"calc(50% - 2em)";
+			margin: 1em;
+		}
+	}
+}
+
+@media only screen and (min-width : 54.375em) {
+	.about-deck {
+		font-size: 1.6em;
+	}
+}
+
+@media only screen and (min-width : 62.500em) {
+	.faq-list {
+		li {
+			width: ~"calc(33.3% - 2em)";
+			margin: 1em;
+		}
+	}
+}
