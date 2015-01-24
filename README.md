@@ -9,7 +9,7 @@ In addition to cloning this repository, you'll need [Grunt](http://gruntjs.com/)
 
 We've written a Grunt task in `Gruntfile.js` that watches for changes in the `less/main.less`, converts it CSS, and stores the output in `css/main.css`.
 
-To run Grunt, simply `cd` into the repository and run `grunt`.
+Before running Grunt, `cd` into the repository and run `npm install`. Then run `grunt` to watch your `.less` files.
 
 *Do not edit `css/main.css` directly because it will be overwritten.*
 
